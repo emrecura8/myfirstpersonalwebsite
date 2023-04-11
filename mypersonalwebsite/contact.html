@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="design.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="scripts/scripts.js">
+    <script src="scripts/jquery-3.6.0.min.js" type="text/javascript" charset="utf-8"></script>
+
+    <title>My Personal Website</title>
+    <script>
+        $(function () {
+        const date = new Date();
+        $("#dateStr").html(date.toLocaleTimeString());
+
+        intervalId = setInterval(function () {
+        const date = new Date();
+        $("#dateStr").html(date.toLocaleTimeString());
+
+        }, 1000);
+
+  });
+    </script>
+    <style>
+        #sm{
+            display: table;
+            align-items: left;
+        }
+        img#webmail{
+            width: 60px;
+            height:60px;
+            margin-top: 1em;
+            float: middle;
+            margin-right: 40px;
+            margin-left: 1em;
+        }
+        img#gmail{
+            width: 80px;
+            height:60px;
+            margin-top: 1em;
+            float: middle;
+            margin-right: 1em;
+            margin-left: 1em;
+        }
+        a#wm{
+            font-size: 3em;
+        }
+        a#gm{
+            font-size: 3em;
+        }
+        #mails{
+            border: 5px solid #106ACA;
+            border-radius: 3%;
+        }
+    </style>
+</head>
+<body>
+    <div id="header" class="upperside">
+        <a href="#" id="personal">MY PERSONAL WEBSITE</a>
+        <div id="nav"><nav>
+            <a href="home.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="contact.html" class="buttonStyle">CONTACT WITH ME</a>
+            <a href="hobbies.html">HOBBIES</a>
+            <a href="food.html">FOOD</a>
+            <a href="Game/main.html">GAME</a>
+        </nav></div>
+    </div>
+
+    <div>
+        <h1>You can contact with me from these addresses.</h1>
+    </div>
+    <div id="mails">
+        <div id = "sm">
+            <h4>Mail addresses:</h4>
+            <img src="images/bilkentlogo.jpg" alt="" id="webmail">
+            <a href="mailto: emre.cura@ug.bilkent.edu.tr" id="wm">emre.cura@ug.bilkent.edu.tr</a>
+        </div>
+        <div id="gm">
+            <img src="images/gmail.png" alt="" id="gmail">
+            <a href="mailto: emrecurares@gmail.com" id="gm">emrecurares@gmail.com</a>
+        </div>
+    </div>
+    <div>
+        <h1 id="dateStr"></h1>
+      </div>
+
+</body>
+</html>
